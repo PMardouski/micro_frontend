@@ -14,6 +14,9 @@ module.exports = (_, argv) => ({
   devServer: {
     port: 3001,
     historyApiFallback: true,
+    client: {
+      overlay: false
+    }
   },
 
   module: {

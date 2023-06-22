@@ -10,13 +10,14 @@ interface State {
 
 class SafeComponent extends Component<Props, State> {
 
-  public constructor(props: Props) {
-    super(props);
-    this.state = { hasError: false };
-  }
-  // public state: State = {
-  //   hasError: false
-  // };
+  public state: State = {
+    hasError: false
+  };
+
+  // public constructor(props: Props) {
+  //   super(props);
+  //   this.state = { hasError: false };
+  // }
 
   // static getDerivedStateFromError(error: Error) {
   //   return { hasError: true, error };
@@ -31,7 +32,6 @@ class SafeComponent extends Component<Props, State> {
   }
 
   // public render() {
-  //   //debugger;
   //   if (this.state.hasError) {
   //     return <h1>Something went wrong.</h1>;
   //   }
@@ -40,6 +40,7 @@ class SafeComponent extends Component<Props, State> {
   // }
 
   public render(): ReactNode {
+
     if (this.state.hasError) {
       return <h1>Something went wrong.</h1>;
     }
