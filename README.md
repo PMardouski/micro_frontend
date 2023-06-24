@@ -1,4 +1,4 @@
-# Web app is based on micro frontends architecture
+# Example of Web app that is based on micro frontends architecture
 
 ### Description:
 This is a simple example a web application based on React using microfront architecture approche.
