@@ -1,4 +1,5 @@
-import React, { Suspense, useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./index.scss";
 
@@ -8,15 +9,18 @@ import Footer from "home/Footer";
 import { PDPContent } from "./PDPContent";
 
 const App = () =>
-(<div className="mt-10 text-3xl mx-auto max-w-6xl">
-    <SafeComponent>
+(
+  <Router>
+    <div className="mt-10 text-3xl mx-auto max-w-6xl">
       <Header />
-    </SafeComponent>
-    <div className="my-10">
-      <PDPContent />
+      <div className="my-10">
+        <Routes>
+          <Route path="/product/:id" element={ <PDPContent />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
+  </Router>
 );
 
 export default App;
