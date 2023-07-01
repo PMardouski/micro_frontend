@@ -13,10 +13,10 @@ export default function CartContent() {
   // }, []);
 
   //! without return
-  useEffect(() => {
-    login("sally", "123");
-      jwt.subscribe((val) => setToken(val ?? ""));;
-  }, []);
+  // useEffect(() => {
+  //   login("sally", "123");
+  //     jwt.subscribe((val) => setToken(val ?? ""));;
+  // }, []);
 
   return <div>JET: {token}</div>
 };
