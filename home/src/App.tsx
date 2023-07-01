@@ -1,5 +1,6 @@
 import React from "react";
 
+import "remixicon/fonts/remixicon.css";
 import "./index.scss";
 
 import Header from "./Header";
