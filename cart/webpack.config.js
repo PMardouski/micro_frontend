@@ -51,7 +51,11 @@ module.exports = (_, argv) => ({
         pdp:  "home@http://localhost:3001/remoteEntry.js",
         cart: "home@http://localhost:3002/remoteEntry.js",
       },
-      exposes: {},
+      exposes: {
+        "./cart": "./src/cart.ts",
+        "./Login": "./src/Login.tsx",
+        "./MiniCart": "./src/MiniCart.tsx",
+      },
       shared: {
         ...deps,
         react: {
