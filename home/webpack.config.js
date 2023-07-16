@@ -55,6 +55,8 @@ module.exports = (_, argv) => ({
         "./Header": "./src/Header.tsx",
         "./Footer": "./src/Footer.tsx",
         "./products": "./src/products.ts",
+        "./HomeContent": "./src/HomeContent.tsx",
+        "./MainLayout": "./src/MainLayout.tsx",
       },
       shared: {
         ...deps,
